@@ -77,7 +77,7 @@ for batch in test_iterator:
     acc.update_state(y, pred)
 
 print("Precision:", precision.result().numpy)
-print("Recall:", recall.result().numpy)
+print("Recall: ", recall.result().numpy)
 print("Accuracy:", acc.result().numpy)
 
 model.save('../model/note_classifier_model.h5')
